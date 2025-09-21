@@ -2,29 +2,29 @@
 # PROJECT 1
 ## Calculator
 
-Cal_n = 0
+Cal_n = 0 # Counter Use
 
 def User_input():
     global Cal_n
     Cal_n += 1
 
     print("#"*10, "Calculator #", Cal_n, "#"*10, "\n#")
-    Input = str(input("#  Type Number :"))
+    Input = input("#  Type Number :") # Input Number
 
     Calculate(Input)
 
-def Calculate(Uinput):
+def Calculate(U_input):
         global Cal_n
 
-        result = eval(Uinput)
+        result = eval(U_input)
         print("# ", result)
 
-        Next = input("#  Continue? Yes / No: ")
+        Next = input("#  Continue? Yes / No: ") # Input Continue or not
         print("#")
         
-        if Next == "Yes" or Next == "yes":
+        if Next.lower == "yes":
             User_input()
-        elif Next == "No" or Next == "no" or Next == "NO":
+        elif Next.lower == "no":
             print("#"*8, "Close Calculator", "#"*8, "\n\n\n")
             Cal_n = 0
 
