@@ -1,0 +1,8 @@
+
+.vscode/
+
+*.log
+__pycache__/
+*.pyc
+*.class
+Thumbs.db
