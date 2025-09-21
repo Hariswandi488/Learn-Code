@@ -47,9 +47,10 @@ body {
     background-color: white;
     max-width: 700px;
     width: 90%;
-    margin-left: 30px;
+    margin: auto auto auto auto;
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .biodata img {
