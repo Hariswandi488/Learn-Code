@@ -86,8 +86,7 @@ def t(key):
 ## Data Base Code
 
 def Connect():
-    DB_file  = os.path.join("Python Projects/Project #2", "Tasks.db")
-    return sqlite3.connect(DB_file)
+    return sqlite3.connect("Tasks.db")
 
 def setup():
     conn = Connect()
@@ -220,11 +219,14 @@ def main():
         elif choice == 6:
             language_n = not language_n
             language_check(language_n)
-            print("\n", t("title"), "\n", t("Lang Changed"), "\n")
+            print("\n", t("Title"), "\n", t("Lang Changed"), "\n")
 
         elif choice == 7:
             print("\n", t("Exit"))
             break
+
+        else:
+            print("Error Data")
         
 
 main()
