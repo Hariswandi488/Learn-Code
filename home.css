@@ -4,7 +4,8 @@ body {
 }
 
 .navbar {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     position: fixed;
     justify-content: center;
     top: 0;
@@ -33,7 +34,6 @@ body {
 
 
 .home {
-    margin-left: 50px;
     margin-right: 50px;
 }
 
@@ -43,10 +43,19 @@ body {
 
 .biodata {
     display: flex;
+    align-items: flex-start;
     background-color: white;
     max-width: 700px;
     width: 90%;
     margin-left: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.biodata img {
+    height: auto;
+    width: 50%
+
 }
 
 .biodata h2 {
