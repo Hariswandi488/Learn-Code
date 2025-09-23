@@ -5,7 +5,9 @@ body {
 
 .navbar {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-auto-flow: column;
+    overflow-x: auto;
+    white-space: nowrap;
     position: fixed;
     justify-content: center;
     top: 0;
@@ -16,10 +18,6 @@ body {
     z-index: 1000;
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        grid-template-columns: 1fr;}
-}
 
 .navbarleft a {
     color: white;
