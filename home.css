@@ -9,7 +9,7 @@ body {
     overflow-x: auto;
     white-space: nowrap;
     position: fixed;
-    justify-content: center;
+    justify-content: left;
     top: 0;
     left: 0;
     width: 100%;
