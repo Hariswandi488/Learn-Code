@@ -8,7 +8,8 @@ massage = {
     "3" : "Den Test Spam Acak # ",
     "4" : "Jan Berang Dih :v # ",
     "5" : "Hitam Hitam Hitam Hitam Hitam #",
-    "6" : "Kini Spam Nyo Labiah Capek Pado Patang # "
+    "6" : "Kini Spam Nyo Labiah Capek Pado Patang # ",
+    "7" : "Gabriel WIBU , Alhadi JAWA # "
 }
 
 print("Memulai Spam Dalam 5 Detik")
@@ -21,8 +22,8 @@ def spam(msg: str,delay: float):
 
     time.sleep(delay)
 
-    for i in range(1, 12):
-        rng = random.randint(1, 6)
+    for i in range(1, 20):
+        rng = random.randint(1, 7)
 
         pyautogui.write(msg[str(rng)])
         pyautogui.write(str(i))
